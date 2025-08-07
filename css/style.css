@@ -88,30 +88,30 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0; /* Reduced from 1rem to move up */
+  padding: 1rem 0;
   margin-bottom: -20px;
-  margin-top: -1rem; /* Added negative margin to move up */
+  margin-top: -1rem;
   margin-left: -20px;
 }
 
 .hero-logo {
   display: flex;
-  align-items: left;
-  position: relative; /* Back to relative for the container */
-  left: -10px; /* Move 10px to the left */
-  width: auto; /* Let it size naturally */
+  align-items: center;
+  position: relative;
+  left: -10px;
+  width: auto;
   margin-bottom: -20px;
-  z-index: 100; /* Ensure it's above other elements */
+  z-index: 100;
 }
 
 .nav-buttons-overlay {
   position: absolute;
-  top: calc(50% - 20px); /* Move 10px up from center */
-  left: calc(50% + 260px); /* Shift 200px to the right */
+  top: calc(50% - 20px);
+  left: calc(50% + 260px);
   transform: translate(-50%, -50%);
   display: flex;
   gap: 1rem;
-  z-index: 10; /* Ensure buttons are above the logo */
+  z-index: 10;
 }
 
 .hero-nav-buttons {
@@ -123,19 +123,20 @@ body {
   background-color: #fbf7ba;
   color: #8B4513;
   border: none;
-  padding: 1rem 3rem; /* Increased horizontal padding to make longer */
+  padding: 1rem 3rem;
   border-radius: 30px;
   font-family: "Alice", serif;
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 250px; /* Increased from 180px to make buttons much wider */
-  text-align: center; /* Center the text */
-  display: inline-flex; /* Use flexbox for better centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  width: 250px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-btn:hover {
@@ -151,11 +152,11 @@ body {
   align-items: center;
   flex-grow: 1;
   margin: auto 0;
-  gap: 2rem; /* Add gap between logo and button */
+  gap: 2rem;
 }
 
 .cta-button {
-  background: linear-gradient(135deg, rgba(251, 247, 186, 0.3), rgba(255, 165, 0, 0.2)); /* Very transparent gradient */
+  background: linear-gradient(135deg, rgba(251, 247, 186, 0.3), rgba(255, 165, 0, 0.2));
   color: #8B4513;
   border: none;
   padding: 2rem 4rem;
@@ -170,6 +171,7 @@ body {
   letter-spacing: 0.1em;
   text-decoration: none;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .cta-button:hover {
@@ -439,11 +441,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  position: absolute; /* Position over the footer image */
-  top: 40%; /* Center vertically */
-  left: calc(50% + 250px); /* Shift 200px to the right */
-  transform: translate(-50%, -50%); /* Perfect centering */
-  z-index: 20; /* Ensure it's above the footer image */
+  position: absolute;
+  top: 40%;
+  left: calc(50% + 250px);
+  transform: translate(-50%, -50%);
+  z-index: 20;
 }
 
 .contact-item {
@@ -454,14 +456,15 @@ body {
 
 .contact-icon {
   font-size: 1.2rem;
-  color: #8B4513; /* Darker color for better contrast */
+  color: #8B4513;
 }
 
 .contact-text {
   font-family: "Alice", serif;
   font-size: 1.5rem;
-  color: #fbf7ba; /* Darker color for better contrast */
+  color: #fbf7ba;
   font-weight: 400;
+  word-break: break-word;
 }
 
 .contact-link {
@@ -471,11 +474,12 @@ body {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .contact-link:hover {
   transform: translateY(-2px);
-  color: #fbf7baa1; /* Slightly different color on hover */
+  color: #fbf7baa1;
 }
 
 .footer-text {
@@ -506,15 +510,66 @@ body {
 
 /* ************RESPONSIVE DESIGN************ */
 
+/* Tablet Styles */
 @media (max-width: 768px) {
+  /* Hero Section Mobile */
+  .hero-header {
+    height: 100vh;
+    min-height: 600px;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+  }
+  
   .hero-nav {
     flex-direction: column;
     gap: 1rem;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
   }
   
-  .hero-nav-buttons {
-    flex-wrap: wrap;
+  .hero-logo {
+    left: 0;
+    margin-bottom: 0;
     justify-content: center;
+  }
+  
+  .nav-buttons-overlay {
+    position: static;
+    transform: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    width: 200px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero-cta {
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .cta-logo-image {
+    max-height: 150px;
+  }
+  
+  .cta-button {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Services Section Mobile */
+  .services-section {
+    padding: 3rem 1rem;
+    min-height: auto;
   }
   
   .services-grid {
@@ -522,72 +577,236 @@ body {
     gap: 2rem;
   }
   
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .service-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .service-image {
+    max-width: 300px;
+  }
+  
+  /* About Section Mobile */
+  .about-section {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+  
+  .about-container {
+    max-width: 100%;
+  }
+  
+  /* Footer Section Mobile */
+  .footer-section {
+    padding: 3rem 1rem;
+    min-height: auto;
+    position: relative;
   }
   
   .footer-content {
-  flex-direction: column;
-    gap: 1rem;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
     text-align: center;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 2rem 0;
   }
   
-  .section-title {
-    font-size: 2.5rem;
+  .footer-contact {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    gap: 1rem;
+    align-items: center;
   }
   
-  .about-title {
-    font-size: 2.5rem;
+  .contact-item {
+    justify-content: center;
   }
   
-  .logo-image {
-    max-height: 80px;
-  }
-  
-  .cta-logo-image {
-    max-height: 250px; /* Smaller on tablets */
-  }
-  
-  .hero-cta {
-    gap: 1.5rem; /* Smaller gap on tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-content {
-    padding: 1rem;
-  }
-  
-  .nav-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-  }
-  
-  .cta-button {
-    padding: 1.5rem 2.5rem;
+  .contact-text {
     font-size: 1.2rem;
   }
   
-  .section-title {
-    font-size: 2rem;
+  .footer-image {
+    margin: 2rem 0;
   }
   
-  .services-section,
+  .footer-full-image {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+  
+  /* Typography Mobile */
+  .section-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+  }
+  
+  .logo-image {
+    max-height: 70px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Hero Section Mobile */
+  .hero-header {
+    height: 100vh;
+    min-height: 500px;
+  }
+  
+  .hero-content {
+    padding: 0.5rem;
+  }
+  
+  .hero-nav {
+    gap: 0.5rem;
+  }
+  
+  .nav-buttons-overlay {
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-btn {
+    width: 180px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 20px;
+  }
+  
+  .hero-cta {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cta-logo-image {
+    max-height: 120px;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+  }
+  
+  /* Services Section Mobile */
+  .services-section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .services-grid {
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    max-width: 100%;
+  }
+  
+  .service-image {
+    max-width: 250px;
+  }
+  
+  .service-label {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* About Section Mobile */
   .about-section {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
+  }
+  
+  .about-full-image {
+    border-radius: 10px;
+  }
+  
+  /* Footer Section Mobile */
+  .footer-section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .footer-content {
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .footer-contact {
+    gap: 0.75rem;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+  }
+  
+  .footer-image {
+    margin: 1rem 0;
+  }
+  
+  .footer-full-image {
+    border-radius: 8px;
+    max-height: 300px;
+  }
+  
+  /* Typography Mobile */
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 2rem;
   }
   
   .logo-image {
     max-height: 60px;
   }
   
-  .cta-logo-image {
-    max-height: 200px; /* Smaller on mobile */
+  /* General Mobile Adjustments */
+  .wrapper {
+    overflow-x: hidden;
   }
   
-  .hero-cta {
-    gap: 1rem; /* Smaller gap on mobile */
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 360px) {
+  .hero-content {
+    padding: 0.25rem;
+  }
+  
+  .nav-btn {
+    width: 160px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .cta-logo-image {
+    max-height: 100px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .logo-image {
+    max-height: 50px;
+  }
+  
+  .services-section,
+  .about-section,
+  .footer-section {
+    padding: 1.5rem 0.25rem;
   }
 }
 
