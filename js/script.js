@@ -14,7 +14,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Navigation buttons are now links, so no need for click handlers
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                // Calculate the target position
+                const targetPosition = targetSection.offsetTop;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                const duration = 1500; // 1.5 seconds for smooth animation
+                let start = null;
+                
+                // Animation function
+                function animation(currentTime) {
+                    if (start === null) start = currentTime;
+                    const timeElapsed = currentTime - start;
+                    const run = ease(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+                    if (timeElapsed < duration) requestAnimationFrame(animation);
+                }
+                
+                // Easing function for smooth animation
+                function ease(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return c / 2 * t * t + b;
+                    t--;
+                    return -c / 2 * (t * (t - 2) - 1) + b;
+                }
+                
+                requestAnimationFrame(animation);
+            }
+        });
+    });
 
     // CTA button is now a link, so no need for click handler
 
