@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>Party Henna - Henna Hut</title>
+  <link rel="stylesheet" href="css/style.css?v=7" />
+  <link href="https://fonts.googleapis.com/css2?family=Alice:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header/Hero Section with Hands Background -->
+    <header class="hero-header">
+      <div class="hero-background">
+        <img src="ctapic.PNG" alt="Henna Hands" class="hero-bg-image">
+      </div>
+      <div class="hero-content">
+        <!-- Navigation Bar -->
+        <nav class="hero-nav">
+          <div class="hero-logo">
+            <img src="logonavigationbar.PNG" alt="Henna Hut Logo" class="logo-image">
+            <div class="nav-buttons-overlay">
+              <a href="index.html" class="nav-btn">Home</a>
+              <a href="index.html#about" class="nav-btn">About Me</a>
+              <a href="index.html#services" class="nav-btn">Services</a>
+              <a href="index.html#contact" class="nav-btn">Contacts</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Service Title Section -->
+        <div class="service-hero-content">
+          <h1 class="service-hero-title">PARTY HENNA</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Party Henna Quote Request Form Section -->
+    <section class="service-content-section">
+      <div class="service-content-container">
+        <div class="service-description">
+          <h2>Party Henna Services</h2>
+          <p>Party henna services begin with a minimum of 2 hours per artist, starting at $200. Prices may vary based on location, event date, and time. Please fill in the quote request form below for a quote.</p>
+          <p>A $50 deposit is required to lock in the date and confirm the booking.</p>
+          <p>Please note that the deposit is non-refundable.</p>
+          
+          <div class="quote-form-section">
+            <h3>Party Henna Quote Request Form</h3>
+            <p>Please fill in the form below to request a quote for your party henna services. We'll get back to you within 24 hours with pricing and availability.</p>
+            
+                            <form action="https://formspree.io/f/xrblolke" method="POST" class="quote-form">
+                  <input type="hidden" name="_subject" value="Henna Hut - Party Quote Request">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name *</label>
+                  <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name *</label>
+                  <input type="text" id="last-name" name="last-name" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <small>Please provide a valid email. A response will be sent to this email.</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Cell No. *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="event-date">Date of Event *</label>
+                <input type="date" id="event-date" name="event-date" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="event-location">Location of Event *</label>
+                <textarea id="event-location" name="event-location" rows="3" placeholder="Please provide complete address. If the location is not decided yet, please provide the zip code/approx. area where the event will be held." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="event-type">Type of Event *</label>
+                <input type="text" id="event-type" name="event-type" placeholder="Sangeet/henna night/birthday/bridal shower/baby shower/corporate event etc." required>
+              </div>
+              
+              <div class="form-group">
+                <label for="start-time">Starting Time *</label>
+                <input type="time" id="start-time" name="start-time" required>
+                <small>This is the time you want the henna artist to start doing henna, and may be different from the starting time of your event.</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="duration">Duration (Hours) *</label>
+                <input type="number" id="duration" name="duration" min="1" max="12" required>
+                <small>How many hours do you want to hire the henna artist for? (Minimum 2 hours)</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="guest-count">Approx. Number of Guests Requiring a Henna Design *</label>
+                <input type="number" id="guest-count" name="guest-count" min="1" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="artist-count">Number of Artists Required *</label>
+                <input type="number" id="artist-count" name="artist-count" min="1" value="1" required>
+                <small>Multiple artists can be arranged for large sized events, depending upon artist availability. If undecided, just enter 1.</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="additional-info">Additional Information *</label>
+                <textarea id="additional-info" name="additional-info" rows="4" placeholder="Please provide any further details you would like the artist to know regarding your event." required></textarea>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="submit-button">Request Quote</button>
+              </div>
+            </form>
+            
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                <p><strong>Phone:</strong> <a href="tel:7039015689">703-901-5689</a></p>
+                <p><strong>Text or WhatsApp:</strong> <a href="sms:7039015689">703-901-5689</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/h3nnahut" target="_blank">@h3nnahut</a></p>
+                <p><strong>Email:</strong> <a href="mailto:h3nnahut@outlook.com">h3nnahut@outlook.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-border-top"></div>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <div class="contact-item">
+            <a href="https://instagram.com/h3nnahut" target="_blank" class="contact-link">
+              <span class="contact-text">@h3nnahut</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="mailto:h3nnahut@outlook.com" class="contact-link">
+              <span class="contact-text">h3nnahut@outlook.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-image">
+        <img src="footer.png" alt="Footer" class="footer-full-image">
+      </div>
+      <div class="footer-border-bottom"></div>
+    </footer>
+  </div>
+  <script src="js/script.js?v=2"></script>
+</body>
+</html> 

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>Book Appointment - Henna Hut</title>
+  <link rel="stylesheet" href="css/style.css?v=7" />
+  <link href="https://fonts.googleapis.com/css2?family=Alice:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header/Hero Section with Hands Background -->
+    <header class="hero-header">
+      <div class="hero-background">
+        <img src="ctapic.PNG" alt="Henna Hands" class="hero-bg-image">
+      </div>
+      <div class="hero-content">
+        <!-- Navigation Bar -->
+        <nav class="hero-nav">
+          <div class="hero-logo">
+            <img src="logonavigationbar.PNG" alt="Henna Hut Logo" class="logo-image">
+            <div class="nav-buttons-overlay">
+              <a href="index.html" class="nav-btn">Home</a>
+              <a href="index.html#about" class="nav-btn">About Me</a>
+              <a href="index.html#services" class="nav-btn">Services</a>
+              <a href="index.html#contact" class="nav-btn">Contacts</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Service Title Section -->
+        <div class="service-hero-content">
+          <h1 class="service-hero-title">BOOK APPOINTMENT</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+      <div class="booking-container">
+        <div class="booking-form">
+          <h2>Request Your Henna Session</h2>
+          <p>Fill out the form below and I'll get back to you within 24 hours to confirm your appointment!</p>
+          
+          <form action="https://formspree.io/f/xrblolke" method="POST" class="inquiry-form">
+            <input type="hidden" name="_subject" value="Henna Hut - Booking Request">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+
+            
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">Select a time...</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location" value="Home Studio (Woodbridge, VA)" readonly>
+            </div>
+            
+            <div class="form-group">
+              <label for="henna-type">Henna Type *</label>
+              <select id="henna-type" name="henna-type" required>
+                <option value="">Select henna type...</option>
+                <option value="Natural Henna">Natural Henna</option>
+                <option value="Jagua Henna (Black)">Jagua Henna (Black)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="design-quantity">Design Quantities</label>
+              <div class="quantity-inputs">
+                <div class="quantity-item">
+                  <label for="small-qty">Small Design:</label>
+                  <input type="number" id="small-qty" name="small-qty" min="0" value="0">
+                </div>
+                <div class="quantity-item">
+                  <label for="medium-qty">Medium Design:</label>
+                  <input type="number" id="medium-qty" name="medium-qty" min="0" value="0">
+                </div>
+                <div class="quantity-item">
+                  <label for="large-qty">Large Design:</label>
+                  <input type="number" id="large-qty" name="large-qty" min="0" value="0">
+                </div>
+                <div class="quantity-item">
+                  <label for="intricate-qty">Intricate Design:</label>
+                  <input type="number" id="intricate-qty" name="intricate-qty" min="0" value="0">
+                </div>
+                <div class="quantity-item">
+                  <label for="other-body-qty">Other Body (feet/belly/shoulders):</label>
+                  <input type="number" id="other-body-qty" name="other-body-qty" min="0" value="0">
+                </div>
+              </div>
+              <small>Example: 2 intricate, 1 large and 1 small</small>
+            </div>
+            
+            <div class="form-group">
+              <label for="specifications">Specifications</label>
+              <textarea id="specifications" name="specifications" rows="4" placeholder="Describe your desired design, any specific patterns, symbols, or style preferences..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="guests">Number of People (for group sessions)</label>
+              <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="submit-button">Send Booking Request</button>
+            </div>
+          </form>
+          
+          <div class="booking-info">
+            <h3>What happens next?</h3>
+            <ol>
+              <li>You'll receive a confirmation email within 24 hours</li>
+              <li>I'll confirm availability and discuss any details</li>
+              <li>We'll finalize the appointment time and location</li>
+              <li>You'll receive a reminder 24 hours before your session</li>
+            </ol>
+            
+            <div class="contact-alternative">
+              <p><strong>Prefer to contact directly?</strong></p>
+              <p>Email: <a href="mailto:h3nnahut@outlook.com">h3nnahut@outlook.com</a></p>
+              <p>Instagram: <a href="https://instagram.com/h3nnahut" target="_blank">@h3nnahut</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-border-top"></div>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <div class="contact-item">
+            <a href="https://instagram.com/h3nnahut" target="_blank" class="contact-link">
+              <span class="contact-text">@h3nnahut</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="mailto:h3nnahut@outlook.com" class="contact-link">
+              <span class="contact-text">h3nnahut@outlook.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-image">
+        <img src="footer.png" alt="Footer" class="footer-full-image">
+      </div>
+      <div class="footer-border-bottom"></div>
+    </footer>
+  </div>
+  <script src="js/script.js?v=2"></script>
+</body>
+</html> 

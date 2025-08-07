@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>Bridal Henna - Henna Hut</title>
+  <link rel="stylesheet" href="css/style.css?v=7" />
+  <link href="https://fonts.googleapis.com/css2?family=Alice:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header/Hero Section with Hands Background -->
+    <header class="hero-header">
+      <div class="hero-background">
+        <img src="ctapic.PNG" alt="Henna Hands" class="hero-bg-image">
+      </div>
+      <div class="hero-content">
+        <!-- Navigation Bar -->
+        <nav class="hero-nav">
+          <div class="hero-logo">
+            <img src="logonavigationbar.PNG" alt="Henna Hut Logo" class="logo-image">
+            <div class="nav-buttons-overlay">
+              <a href="index.html" class="nav-btn">Home</a>
+              <a href="index.html#about" class="nav-btn">About Me</a>
+              <a href="index.html#services" class="nav-btn">Services</a>
+              <a href="index.html#contact" class="nav-btn">Contacts</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Service Title Section -->
+        <div class="service-hero-content">
+          <h1 class="service-hero-title">BRIDAL HENNA</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Service Content Section -->
+    <section class="service-content-section">
+      <div class="service-content-container">
+        <div class="service-description">
+          <h2>Bridal Henna Services</h2>
+          <p>Make your special day even more beautiful with our exquisite bridal henna services.</p>
+          
+          <h3>Bridal Package Includes:</h3>
+          <ul>
+            <li>Consultation</li>
+            <li>Full hand and arm/leg henna designs</li>
+            <li>Natural homemade henna paste</li>
+            <li>Extended care</li>
+          </ul>
+          
+          <div class="quote-form-section">
+            <h3>Bridal Henna Quote Request Form</h3>
+            <p>Please fill in the form below to find out artist availability and to request a quote. Bridal henna should be done 2-3 days before the wedding for best results.</p>
+            
+            <form action="https://formspree.io/f/xrblolke" method="POST" class="quote-form">
+            <input type="hidden" name="_subject" value="Henna Hut - Bridal Quote Request">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="hennaDate">Date of Bridal Henna *</label>
+                <input type="date" id="hennaDate" name="hennaDate" required>
+                <small>(This should be 2-3 days before the actual wedding ceremony)</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="location">Where will bridal henna be done? *</label>
+                <input type="text" id="location" name="location" required placeholder="Enter location (e.g., Client Location, Artist's home studio, etc.)">
+              </div>
+              
+              <div class="form-group">
+                <label for="address">If you chose 'client location' above, provide full address otherwise write N/A. *</label>
+                <textarea id="address" name="address" rows="3" required placeholder="Enter full address or N/A"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="startTime">Preferred starting time? *</label>
+                <select id="startTime" name="startTime" required>
+                  <option value="">Select time...</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                </select>
+                <small>Please note, that bridal henna can take 3-7 hours to complete depending upon the coverage required.</small>
+              </div>
+              
+              <div class="form-group">
+                <label>Henna Coverage Areas *</label>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="bothPalms" name="bothPalms" value="Both Palms">
+                    <label for="bothPalms">Both Palms</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="bothTopHands" name="bothTopHands" value="Both Top of Hands">
+                    <label for="bothTopHands">Both Top of Hands</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="bothFeet" name="bothFeet" value="Both Feet">
+                    <label for="bothFeet">Both Feet</label>
+                  </div>
+                </div>
+                <small>Please select all areas you would like henna applied to.</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="questions">Any other questions you have, or anything else you would like me to know?</label>
+                <textarea id="questions" name="questions" rows="4" placeholder="Share any specific design preferences, questions, or additional information..."></textarea>
+              </div>
+              
+              <div class="important-notice">
+                <h4>📱 Important Notice: Inspiration Designs</h4>
+                <p><strong>Please send your inspiration designs via:</strong></p>
+                <ul>
+                  <li><strong>Phone/WhatsApp:</strong> <a href="tel:7039015689">703-901-5689</a></li>
+                  <li><strong>Instagram:</strong> <a href="https://instagram.com/h3nnahut" target="_blank">@h3nnahut</a></li>
+                </ul>
+                <p><em>This helps me understand your style preferences and create the perfect design for your special day!</em></p>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="submit-button">Request Quote</button>
+              </div>
+            </form>
+            
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                <p><strong>Phone:</strong> <a href="tel:7039015689">703-901-5689</a></p>
+                <p><strong>Text or WhatsApp:</strong> <a href="sms:7039015689">703-901-5689</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/h3nnahut" target="_blank">@h3nnahut</a></p>
+                <p><strong>Email:</strong> <a href="mailto:h3nnahut@outlook.com">h3nnahut@outlook.com</a></p>
+              </div>
+              
+              <div class="inspiration-note">
+                <p><em>I take inspiration from various designs but do not copy others' work. Each bridal henna design is unique and customized to your preferences and style.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-border-top"></div>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <div class="contact-item">
+            <a href="https://instagram.com/h3nnahut" target="_blank" class="contact-link">
+              <span class="contact-text">@h3nnahut</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="mailto:h3nnahut@outlook.com" class="contact-link">
+              <span class="contact-text">h3nnahut@outlook.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-image">
+        <img src="footer.png" alt="Footer" class="footer-full-image">
+      </div>
+      <div class="footer-border-bottom"></div>
+    </footer>
+  </div>
+  <script src="js/script.js?v=2"></script>
+</body>
+</html> 
