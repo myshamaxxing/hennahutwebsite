@@ -441,11 +441,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  position: absolute;
-  top: 40%;
-  left: calc(50% + 250px);
-  transform: translate(-50%, -50%);
-  z-index: 20;
+  position: absolute; /* Position over the footer image */
+  top: 40%; /* Center vertically */
+  left: calc(50% + 250px); /* Shift 200px to the right */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  z-index: 20; /* Ensure it's above the footer image */
 }
 
 .contact-item {
@@ -456,15 +456,14 @@ body {
 
 .contact-icon {
   font-size: 1.2rem;
-  color: #8B4513;
+  color: #8B4513; /* Darker color for better contrast */
 }
 
 .contact-text {
   font-family: "Alice", serif;
   font-size: 1.5rem;
-  color: #fbf7ba;
+  color: #fbf7ba; /* Darker color for better contrast */
   font-weight: 400;
-  word-break: break-word;
 }
 
 .contact-link {
@@ -474,12 +473,11 @@ body {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
-  text-align: center;
 }
 
 .contact-link:hover {
   transform: translateY(-2px);
-  color: #fbf7baa1;
+  color: #fbf7baa1; /* Slightly different color on hover */
 }
 
 .footer-text {
