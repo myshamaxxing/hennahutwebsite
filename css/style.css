@@ -965,7 +965,7 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     margin-left: auto;
-    margin-right: 0.25rem; /* Minimal right margin for very small screens */
+    margin-right: 0.50rem; /* Minimal right margin for very small screens */
   }
   
   .contact-item {
