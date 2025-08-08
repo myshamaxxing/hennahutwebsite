@@ -658,7 +658,7 @@ body {
   }
   
   .hero-logo {
-    left: 0;
+    left: -20px; /* Shift more to the left */
     margin-bottom: 0;
     justify-content: flex-start;
   }
@@ -769,7 +769,7 @@ body {
   }
   
   .logo-image {
-    max-height: 70px;
+    max-height: 63px; /* Reduced by 30% from 90px */
   }
 }
 
@@ -787,6 +787,10 @@ body {
   
   .hero-nav {
     gap: 0.5rem;
+  }
+  
+  .hero-logo {
+    left: -25px; /* Shift even more to the left for smaller screens */
   }
   
   /* Mobile menu adjustments for smaller screens */
@@ -893,7 +897,7 @@ body {
   }
   
   .logo-image {
-    max-height: 60px;
+    max-height: 56px; /* Reduced by 30% from 80px for smaller screens */
   }
   
   /* General Mobile Adjustments */
@@ -910,6 +914,10 @@ body {
 @media (max-width: 360px) {
   .hero-content {
     padding: 0.25rem;
+  }
+  
+  .hero-logo {
+    left: -30px; /* Shift even more to the left for very small screens */
   }
   
   .nav-btn {
@@ -932,7 +940,7 @@ body {
   }
   
   .logo-image {
-    max-height: 50px;
+    max-height: 49px; /* Reduced by 30% from 70px for very small screens */
   }
   
   .services-section,
