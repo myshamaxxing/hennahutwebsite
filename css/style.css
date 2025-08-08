@@ -690,13 +690,13 @@ body {
   
   /* Services Section Mobile */
   .services-section {
-    padding: 3rem 1rem;
+    padding: 1.5rem 0.5rem; /* Reduced padding to shorten the page */
     min-height: auto;
   }
   
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem; /* Reduced gap */
   }
   
   .service-card {
@@ -710,7 +710,7 @@ body {
   
   /* About Section Mobile */
   .about-section {
-    padding: 3rem 1rem;
+    padding: 1.5rem 0.5rem; /* Reduced padding to shorten the page */
     min-height: auto;
   }
   
@@ -720,51 +720,33 @@ body {
   
   /* Footer Section Mobile */
   .footer-section {
-    padding: 2rem 0.5rem;
+    padding: 0.25rem 0; /* Even more reduced padding */
+    min-height: 30vh; /* Further reduced to shorten the page */
   }
   
   .footer-content {
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    text-align: left;
-    top: 0;
-    left: 0;
-    transform: none;
-    padding: 2rem 0;
-    width: 100%;
+    gap: 0.25rem;
+    padding: 0.25rem 0; /* Reduced padding */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
   }
   
   .footer-contact {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: -2rem; /* Position from the right edge */
-    transform: none;
-    gap: 0.5rem;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
-  
-  .contact-item {
-    justify-content: flex-end;
+    gap: 0.2rem;
+    transform: translateX(1.5rem); /* Reduced shift */
   }
   
   .contact-text {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   
   .footer-image {
-    margin: 2rem 0;
+    margin: 0.25rem 0; /* Reduced margin */
   }
   
   .footer-full-image {
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 10px;
+    border-radius: 6px;
+    max-height: 150px; /* Further reduced height */
   }
   
   /* Typography Mobile */
@@ -879,7 +861,7 @@ body {
   
   .footer-contact {
     gap: 0.25rem;
-    transform: translateX(3rem); /* Shift even more to the right for smaller screens */
+    transform: translateX(6rem); /* Shift even more to the right for smaller screens */
   }
   
   .contact-text {
@@ -951,22 +933,33 @@ body {
   
   /* Footer adjustments for very small screens */
   .footer-section {
-    padding: 1.5rem 0.25rem;
+    padding: 0.125rem 0; /* Minimal padding */
+    min-height: 25vh; /* Minimal height to shorten the page */
   }
   
   .footer-content {
-    gap: 0.25rem;
-    padding: 0.5rem 0;
-    padding-right: 5rem; /* Even more padding to shift contact info further right */
+    gap: 0.125rem;
+    padding: 0.125rem 0; /* Minimal padding */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
   }
   
   .footer-contact {
-    gap: 0.2rem;
-    transform: translateX(4rem); /* Shift even more to the right for very small screens */
+    gap: 0.1rem;
+    transform: translateX(1rem); /* Minimal shift */
   }
   
   .contact-text {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+  
+  .footer-image {
+    margin: 0.125rem 0; /* Minimal margin */
+  }
+  
+  .footer-full-image {
+    border-radius: 4px;
+    max-height: 120px; /* Minimal height */
   }
   
   .services-section,
