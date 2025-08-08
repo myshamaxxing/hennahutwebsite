@@ -14,6 +14,46 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Mobile Menu Functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+    
+    // Open mobile menu
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+        });
+    }
+    
+    // Close mobile menu
+    if (mobileMenuClose) {
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    }
+    
+    // Close mobile menu when clicking on menu items
+    mobileMenuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    });
+    
+    // Close mobile menu when clicking outside
+    if (mobileMenuOverlay) {
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+    
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
