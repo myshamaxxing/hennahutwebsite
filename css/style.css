@@ -420,6 +420,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  padding-right: 3rem; /* Add padding to shift contact info to the right */
   width: 100%;
   position: absolute; /* Position over the footer image */
   top: 50%; /* Center vertically */
@@ -740,12 +741,12 @@ body {
     position: relative;
     top: 0;
     left: 0;
+    right: -2rem; /* Position from the right edge */
     transform: none;
     gap: 0.5rem;
     align-items: flex-end;
     justify-content: flex-end;
     margin-left: auto;
-    margin-right: -1rem; /* Shift more to the right */
   }
   
   .contact-item {
@@ -874,11 +875,12 @@ body {
   .footer-content {
     gap: 0.5rem;
     padding: 1rem 0;
+    padding-right: 4rem; /* More padding to shift contact info further right */
   }
   
   .footer-contact {
     gap: 0.25rem;
-    margin-right: -1.5rem; /* Shift even more to the right for smaller screens */
+    transform: translateX(3rem); /* Shift even more to the right for smaller screens */
   }
   
   .contact-text {
@@ -956,11 +958,12 @@ body {
   .footer-content {
     gap: 0.25rem;
     padding: 0.5rem 0;
+    padding-right: 5rem; /* Even more padding to shift contact info further right */
   }
   
   .footer-contact {
     gap: 0.2rem;
-    margin-right: -2rem; /* Shift even more to the right for very small screens */
+    transform: translateX(4rem); /* Shift even more to the right for very small screens */
   }
   
   .contact-text {
