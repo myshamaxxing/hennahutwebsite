@@ -745,6 +745,7 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     margin-left: auto;
+    margin-right: -1rem; /* Shift more to the right */
   }
   
   .contact-item {
@@ -877,6 +878,7 @@ body {
   
   .footer-contact {
     gap: 0.25rem;
+    margin-right: -1.5rem; /* Shift even more to the right for smaller screens */
   }
   
   .contact-text {
@@ -958,6 +960,7 @@ body {
   
   .footer-contact {
     gap: 0.2rem;
+    margin-right: -2rem; /* Shift even more to the right for very small screens */
   }
   
   .contact-text {
