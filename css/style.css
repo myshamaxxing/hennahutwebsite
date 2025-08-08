@@ -869,13 +869,12 @@ body {
   
   /* Footer Section Mobile */
   .footer-section {
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   
   .footer-content {
     gap: 0.5rem;
     padding: 1rem 0;
-    padding-right: 4rem; /* More padding to shift contact info further right */
   }
   
   .footer-contact {
