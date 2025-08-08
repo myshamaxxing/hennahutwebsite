@@ -658,7 +658,7 @@ body {
   }
   
   .hero-logo {
-    left: -20px; /* Shift more to the left */
+    left: -35px; /* Shift even more to the left */
     margin-bottom: 0;
     justify-content: flex-start;
   }
@@ -772,7 +772,7 @@ body {
   }
   
   .logo-image {
-    max-height: 63px; /* Reduced by 30% from 90px */
+    max-height: 56px; /* Reduced by 40% from 90px */
   }
 }
 
@@ -793,7 +793,7 @@ body {
   }
   
   .hero-logo {
-    left: -25px; /* Shift even more to the left for smaller screens */
+    left: -40px; /* Shift even more to the left for smaller screens */
   }
   
   /* Mobile menu adjustments for smaller screens */
@@ -900,7 +900,7 @@ body {
   }
   
   .logo-image {
-    max-height: 56px; /* Reduced by 30% from 80px for smaller screens */
+    max-height: 49px; /* Reduced by 40% from 80px for smaller screens */
   }
   
   /* General Mobile Adjustments */
@@ -920,7 +920,7 @@ body {
   }
   
   .hero-logo {
-    left: -30px; /* Shift even more to the left for very small screens */
+    left: -45px; /* Shift even more to the left for very small screens */
   }
   
   .nav-btn {
@@ -943,7 +943,7 @@ body {
   }
   
   .logo-image {
-    max-height: 49px; /* Reduced by 30% from 70px for very small screens */
+    max-height: 42px; /* Reduced by 40% from 70px for very small screens */
   }
   
   /* Footer adjustments for very small screens */
